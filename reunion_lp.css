@@ -1,30 +1,28 @@
 /* COLOR */
 /* #d56042 オレンジ */
+/* #000000 ブラック */
+/* #E7E7E7 ホワイトよりグレー */
+/* #3D3D3D グレイ濃い */
+/* #e0e0e0 グレイ明るい */
+/* #ffffff ホワイト */
 
 /* ALL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  /* ここでhtml全体のフォントサイズを10pxに指定している。 16px*62.5%=10px これによってrem指定しやすい*/
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
+  background-color: #e7e7e7;
 }
 
 a,
 a:link,
 a:visited {
   text-decoration: none;
-  color: #000000;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 li {
@@ -39,22 +37,46 @@ li {
 }
 
 /* TYPOGRAPHY  */
-h1,
-h2,
-p {
-  margin: 0;
+
+h1 {
+  font-size: 62px;
 }
 
-.title--large {
-  font-size: 6.2rem;
+h2 {
+  font-size: 31px;
 }
 
-.title--medium {
-  font-size: 3.1rem;
+h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.sub__title {
-  font-size: 1.8rem;
+/* PATTERN POSITIONS */
+
+.position__pattern1 {
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+.position__app-screen {
+  position: absolute;
+  top: 467px;
+  left: 576px;
+  z-index: 2;
+}
+
+.position__pattern2 {
+  position: absolute;
+  bottom: 0;
+  left: 360px;
+  z-index: -1;
+}
+
+.position__pattern3 {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* HEADER */
@@ -63,7 +85,7 @@ p {
 }
 
 .nav {
-  padding: 4.2rem 10vw;
+  padding: 42px 10vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -75,7 +97,7 @@ p {
 }
 
 .nav__item {
-  margin: 0 3rem 0 0;
+  margin: 0 30px 0 0;
 }
 
 .nav__item:last-child {
@@ -83,17 +105,20 @@ p {
 }
 
 .nav__link {
-  font-size: 1.4rem;
+  font-size: 14px;
+  color: #000000;
 }
 
 /* TOP */
 
 .top {
   background-color: #d56042;
+  position: relative;
 }
 
-.content__top {
-  padding: 8.4rem 10vw 11.8rem 10vw;
+.top__content {
+  padding: 84px 10vw 0 10vw;
+  height: 80vh;
 }
 
 .decoration-line__box {
@@ -101,28 +126,29 @@ p {
 }
 
 .decoration-line::after {
-  width: 2.5rem;
+  width: 25px;
   height: 4px;
   background-color: #000000;
   content: "";
   position: absolute;
-  top: -1rem;
+  top: -1px;
 }
 
-.title__top {
-  padding: 13.2rem 0 3rem 0;
+.top__title {
+  padding: 132px 0 30px 0;
 }
 
-.nav__top {
-  padding-bottom: 8.4rem;
+.top__nav {
+  padding-bottom: 84px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.sub__title__top {
-  margin-bottom: 5.3rem;
+.top__sub-title {
+  margin-bottom: 53px;
+  font-size: 18px;
 }
 
 .download-icon__box {
@@ -131,57 +157,284 @@ p {
 }
 
 .apple-img {
-  width: 18rem;
-  height: 6rem;
+  width: 180px;
+  height: 60px;
   background-image: url("assets/Download_on_the_App_Store_Badge_US.svg");
   background-size: cover;
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 
 .google-img {
-  width: 23.1rem;
-  height: 9rem;
+  width: 231px;
+  height: 90px;
   background-image: url("assets/google-play-badge.png");
   background-size: cover;
 }
 
 /* OVERVIEW */
-.overview-photo--1 {
+.overview__layout {
+  display: flex;
+  position: relative;
+}
+
+.overview__container {
   width: 50%;
-  height: 38.7rem;
+}
+
+.overview-photo--1 {
+  height: 387px;
   background-size: cover;
   background-image: url("assets/overview-photo1.jpg");
-  margin-bottom: 24.8rem;
 }
 
 .overview-photo--2 {
   width: 50%;
-  height: 115.5rem;
   background-size: cover;
   background-image: url("assets/overview-photo2.jpg");
 }
 
 .overview__box {
-  width: 50%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 10rem;
+  justify-content: center;
+  padding-left: 10vw;
 }
 
-.title--overview {
-  margin-bottom: 2rem;
+.overview__title {
+  margin-bottom: 20px;
 }
 
-.sub-title__overview {
+.overview__sub-title {
   font-weight: 500;
-  margin-bottom: 8rem;
+  margin-bottom: 80px;
+  font-size: 18px;
 }
 
-.decoration-line__overview::after {
+.overview__decoration-line::after {
   top: 0;
 }
 
-.discription__overview {
-  font-size: 1.2rem;
-  padding-top: 3rem;
+.overview__description {
+  font-size: 12px;
+  padding-top: 30px;
+  overflow-wrap: normal;
+  width: 314px;
+}
+
+/* SHOWREEL */
+.showreel {
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 50%,
+    #e7e7e7 50%,
+    #e7e7e7 100%
+  );
+  height: 768px;
+  padding: 0 10vw;
+  position: relative;
+}
+
+.showreel__title {
+  color: #ffffff;
+}
+
+/* SPACE */
+.space {
+  height: 40vh;
+  width: 100%;
+  background-color: #000000;
+}
+
+/* FEATURES */
+.features {
+  position: relative;
+}
+
+.features__layout {
+  height: 100vh;
+  display: flex;
+  padding: 0 10vw;
+}
+
+.fetures__layout--left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fetures__layout--right {
+  width: 50%;
+  display: flex;
+}
+
+.features__description--left {
+  width: 50%;
+}
+
+.features__description--right {
+  width: 50%;
+  margin-top: 202px;
+  align-self: flex-end;
+  margin-left: -1px;
+}
+
+.features__description-box--1 {
+  padding: 32px 26px;
+  border: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+}
+
+.features__description-box--2 {
+  padding: 32px 26px;
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+.features__description-box {
+  padding: 32px 26px;
+  border: 1px solid #000000;
+}
+
+.features__title {
+  margin-bottom: 50px;
+}
+
+.features__sub-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.features__description-number {
+  color: #d56042;
+  font-weight: 700;
+  font-size: 10px;
+  margin-bottom: 60px;
+}
+
+.features__description-title {
+  margin-bottom: 30px;
+}
+
+.features__description {
+  overflow-wrap: normal;
+}
+
+/* USECASES */
+
+.usecases {
+  margin: 0 10vw;
+  border-left: 1px solid #bababa;
+  border-right: 1px solid #bababa;
+  display: flex;
+  align-items: center;
+}
+
+.usecases__layout--left {
+  width: 50%;
+}
+
+.usecases__layout--right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.usecaseces__sub-title {
+  font-weight: 500;
+  margin-bottom: 80px;
+  font-size: 18px;
+}
+
+.usecases__description {
+  font-size: 12px;
+  padding-top: 30px;
+  overflow-wrap: normal;
+  width: 209px;
+}
+
+.usecases__layout__detail {
+  border-left: 1px solid #bababa;
+  padding: 157px 0;
+}
+
+.usecases__bg-img {
+  height: 260px;
+  width: 260px;
+  position: relative;
+}
+
+.usecases__bg-img--1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/usecases-reunion.jpg");
+  margin-bottom: 30px;
+}
+
+.usecases__bg-img--2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/usecases-circle.jpg");
+}
+
+.usecases__bg-img--3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/usecases-business.jpg");
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.usecases__bg-img--4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/usecases-friend.jpg");
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.usecases__bg-img--5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("assets/usecases-relationship.jpg");
+  margin-left: 30px;
+}
+
+.usecases__bg-img__word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000000;
+  height: 40vh;
+}
+
+.footer__layput {
+  padding: 0 10vw 10vh 10vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fooer__title {
+  color: #3d3d3d;
+}
+
+.footer__menu {
+  color: #e0e0e0;
+  font-size: 14px;
+  display: flex;
+}
+
+.footer__menu-item {
+  color: #e0e0e0;
 }
