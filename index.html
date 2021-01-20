@@ -5,40 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reunion</title>
   <link rel="stylesheet" type="text/css" href="reunion_lp.css">
+  <link rel="stylesheet" type="text/css" href="query.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#service-flow-html").load("service-flow.html");      
+    });
+  </script>
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header is-show">
     <nav class="nav">
       <div>
         <img src="assets/REUNION.svg" alt="REUNION">
       </div>
       
       <ul class="nav__list">
-        <li class="nav__item "><a class="nav__link" href="/">OVERVIEW</a></li>
-        <li class="nav__item "><a class="nav__link" href="/">SHOWREEL</a></li>
-        <li class="nav__item "><a class="nav__link" href="/">FEATURES</a></li>
-        <li class="nav__item "><a class="nav__link" href="/">SERVICE FLOW</a></li>
-        <li class="nav__item "><a class="nav__link" href="/">USECASES</a></li>
+        <li class="nav__item effect__hover--scale"><a class="nav__link" href="#overview">OVERVIEW</a></li>
+        <li class="nav__item effect__hover--scale"><a class="nav__link" href="#showreel">SHOWREEL</a></li>
+        <li class="nav__item effect__hover--scale"><a class="nav__link" href="#features">FEATURES</a></li>
+        <li class="nav__item effect__hover--scale"><a class="nav__link" href="#service-flow">SERVICE FLOW</a></li>
+        <li class="nav__item effect__hover--scale"><a class="nav__link" href="#usecases">USECASES</a></li>
       </ul>
     </nav>
-  </header> -->
+  </header>
 
   <section class="top">
-    <img class="position__pattern1" src="assets/pattern1.svg">
-    <img class="position__app-screen" src="assets/app-screen-photo.png">
     <div class="top__content">
       <nav class="top__nav">
         <div class="decoration-line__box">
           <span class="decoration-line"></span>
         </div>
-        
         <ul class="nav__list">
-          <li class="nav__item "><a class="nav__link" href="/">OVERVIEW</a></li>
-          <li class="nav__item "><a class="nav__link" href="/">SHOWREEL</a></li>
-          <li class="nav__item "><a class="nav__link" href="/">FEATURES</a></li>
-          <li class="nav__item "><a class="nav__link" href="/">SERVICE FLOW</a></li>
-          <li class="nav__item "><a class="nav__link" href="/">USECASES</a></li>
+          <li class="nav__item effect__hover--scale"><a class="nav__link" href="#overview">OVERVIEW</a></li>
+          <li class="nav__item effect__hover--scale"><a class="nav__link" href="#showreel">SHOWREEL</a></li>
+          <li class="nav__item effect__hover--scale"><a class="nav__link" href="#features">FEATURES</a></li>
+          <li class="nav__item effect__hover--scale"><a class="nav__link" href="#service-flow">SERVICE FLOW</a></li>
+          <li class="nav__item effect__hover--scale"><a class="nav__link" href="#usecases">USECASES</a></li>
         </ul>
       </nav>
       <div>
@@ -50,6 +54,8 @@
         </div>
       </div>
     </div>
+    <img class="position__app-screen" src="assets/app-screen-photo.png">
+    <img class="position__pattern1" src="assets/pattern1.svg">
   </section>
 
   <section>
@@ -57,7 +63,7 @@
       <div class="overview__container">
         <img class="position__pattern2" src="assets/pattern2.svg">
         <div class="overview-photo--1"></div>
-        <div class="overview__box">
+        <div class="overview__box" id="overview">
             <h2 class="english overview__title">OVERVIEW</h2>
             <div class="overview__sub-title">REUNIONとは</div>
             <div class="decoration-line__box">
@@ -74,7 +80,7 @@
     </div>
   </section>
 
-  <section class="showreel">
+  <section class="showreel" id="showreel">
     <h2 class="english showreel__title">SHOWREEL</h2>
     <div class="video">VIDEO</div>
     <img class="position__pattern3" src="assets/pattern3.svg">
@@ -83,15 +89,14 @@
   <section class="space">
   </section>
 
-  <section class="features">
+  <section class="features" id="features">
     <img class="position__pattern1" src="assets/pattern1.svg">
     <div class="features__layout">
-      <div class="fetures__layout--left">
+      <div class="features__layout--left">
         <h2 class="english features__title">ENJOY THE<br>FOLLOWING<br>FEATURES<br></h2>
         <div class="features__sub-title">REUNIONの特徴</div> 
       </div>
-
-      <div class="fetures__layout--right">
+      <div class="features__layout--right">
         <div class="features__description--left">
           <div class="features__description-box--1">
             <div class="english features__description-number">01</div>
@@ -120,13 +125,130 @@
     </div>
   </section>
 
-  <section class="usecases">
+
+
+
+<div class="service-flow--both">
+<!-- 幹事 -->
+<div class="service-flow--coordinator__box">
+  <section class="service-flow--coordinator service-flow--coordinator--1" id="service-flow">
+    <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
+    <div class="service-flow--coordinator__layout--left">
+      <div class="service-flow--coordinator__photo--1"></div>
+      <div class="english service-flow--coordinator__title__container">
+        <h2 class="service-flow--coordinator__title">SERVICE<br>FLOW</h2>
+        <div class="service-flow--coordinator__number">01</div>
+      </div>
+    </div>
+    <div class="service-flow--coordinator__layout--right">
+      <div class="service-flow--coordinator__subject__container">
+        <div class="service-flow--coordinator__subject">幹事</div>
+        <div class="service-flow--coordinator__subject">参加者</div>
+      </div>
+      <div class="service-flow--coordinator__arrow__container__position">
+        <div class="service-flow--coordinator__arrow__container effect__hover--light arrow-left">
+          <img src="assets/arrow-left.svg" alt="arrow-left">
+        </div>
+      </div>
+      <div class="service-flow--coordinator__layout--right-detail">
+        <div class="service-flow--coordinator__layout--right-detail__position">
+          <div class="service-flow--coordinator__description__container">
+            <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+            <p class="service-flow--coordinator__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+          </div>
+          <div class="english service-flow--coordinator__btn">
+            <div class="disabled">BACK</div>
+            <div class="effect__hover--scale" id="next">NEXT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-flow--coordinator service-flow--hide service-flow--coordinator--2" id="service-flow">
+    <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
+    <div class="service-flow--coordinator__layout--left">
+      <div class="service-flow--coordinator__photo--1"></div>
+      <div class="english service-flow--coordinator__title__container">
+        <h2 class="service-flow--coordinator__title">SERVICE<br>FLOW</h2>
+        <div class="service-flow--coordinator__number">02</div>
+      </div>
+    </div>
+    <div class="service-flow--coordinator__layout--right">
+      <div class="service-flow--coordinator__subject__container">
+        <div class="service-flow--coordinator__subject">幹事</div>
+        <div class="service-flow--coordinator__subject">参加者</div>
+      </div>
+      <div class="service-flow--coordinator__arrow__container__position">
+        <div class="service-flow--coordinator__arrow__container effect__hover--light arrow-left">
+          <img src="assets/arrow-left.svg" alt="arrow-left">
+        </div>
+      </div>
+      <div class="service-flow--coordinator__layout--right-detail">
+        <div class="service-flow--coordinator__layout--right-detail__position">
+          <div class="service-flow--coordinator__description__container">
+            <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+            <p class="service-flow--coordinator__description">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
+          </div>
+          <div class="english service-flow--coordinator__btn">
+            <div class="effect__hover--scale" id="back">BACK</div>
+            <div class="disabled">NEXT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+<!-- 参加者 -->
+<div class="service-flow--participant__box">
+<section class="service-flow--participant service-flow--participant--1" id="service-flow">
+  <img class="service-flow--participant__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--participant-app1">
+  <div class="service-flow--participant__layout--left">
+    <div class="service-flow--participant__subject__container">
+      <div class="service-flow--participant__subject">幹事</div>
+      <div class="service-flow--participant__subject">参加者</div>
+    </div>
+    <div class="service-flow--participant__arrow__container__position">
+      <div class="service-flow--participant__arrow__container effect__hover--light arrow-right">
+        <img src="assets/arrow-right.svg" alt="arrow-right">
+      </div>
+    </div>
+    <div class="service-flow--participant__layout--left-detail">
+      <div class="service-flow--participant__layout--left-detail__position">
+        <div class="service-flow--participant__description__container">
+          <h3 class="service-flow--participant__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+          <p class="service-flow--participant__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+        </div>
+        <div class="english service-flow--participant__btn">
+          <div class="disabled">BACK</div>
+          <div class="effect__hover--scale" id="next">NEXT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-flow--participant__layout--right">
+    <div class="service-flow--participant__photo--1"></div>
+    <div class="english service-flow--participant__title__container">
+      <div class="service-flow--participant__number">01</div>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+
+
+
+  <section class="usecases" id="usecases">
     <div class="usecases__layout--left">
       <h2 class="english">USECASES</h2>
       <div class="usecaseces__sub-title">利用シーン</div> 
       <p class="usecases__description">同窓生とコミュニケーションを楽しんだり、同窓会の出欠管理・告知ができるクローズドSNSです同窓生とコミュニケーションを楽しんだり、同窓会の出欠管理・告知ができるクローズドSNSです</p>
     </div>
-
     <div class="usecases__layout--right">
       <div>
         <div class="usecases__bg-img usecases__bg-img--1">
@@ -152,7 +274,7 @@
 
   <footer class="footer">
     <div class="footer__layput">
-      <h1 class="english fooer__title">REUNION</h1>
+      <h1 class="english footer__title">REUNION</h1>
       <div class="footer__menu">
         <a class="footer__menu-item" href="/">利用規約</a>
         <div>|</div>
@@ -162,5 +284,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="reunion_lp.js"></script>
 </body>
 </html>

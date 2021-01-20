@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1440px) {
+  /* PATTERN POSITIONS */
+
+  .position__pattern1 {
+    position: absolute;
+    top: 70px;
+    z-index: 3;
+  }
+
+  .position__app-screen {
+    position: absolute;
+    /* top: 215px;
+    left: 300px; */
+    z-index: 2;
+  }
+
+  .position__pattern2 {
+    position: absolute;
+    bottom: 0;
+    left: 360px;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .position__pattern3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 600px) {
+}
