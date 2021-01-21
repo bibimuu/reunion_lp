@@ -1,36 +1,24 @@
-@media only screen and (max-width: 1440px) {
-  /* PATTERN POSITIONS */
-
+@media only screen and (max-width: 1024px) {
+  /* POSITION */
   .position__pattern1 {
-    position: absolute;
-    top: 70px;
-    z-index: 3;
+    top: 25%;
   }
 
   .position__app-screen {
-    position: absolute;
-    /* top: 215px;
-    left: 300px; */
-    z-index: 2;
+    top: 80%;
   }
 
-  .position__pattern2 {
-    position: absolute;
-    bottom: 0;
-    left: 360px;
-    z-index: -1;
-    height: 100vh;
+  /* TOP */
+
+  .top__title {
+    padding: 0px 0 30px 0;
   }
 
-  .position__pattern3 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-  }
-}
+  /* service-flow--coordinator */
 
-@media only screen and (max-width: 1024px) {
+  .service-flow--coordinator__layout--right-detail {
+    padding-right: 10vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {

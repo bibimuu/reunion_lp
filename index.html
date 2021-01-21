@@ -6,12 +6,10 @@
   <title>Reunion</title>
   <link rel="stylesheet" type="text/css" href="reunion_lp.css">
   <link rel="stylesheet" type="text/css" href="query.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#service-flow-html").load("service-flow.html");      
-    });
-  </script>
+  <script src="reunion_lp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -130,75 +128,67 @@
 
 <div class="service-flow--both">
 <!-- 幹事 -->
-<div class="service-flow--coordinator__box">
-  <section class="service-flow--coordinator service-flow--coordinator--1" id="service-flow">
-    <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
-    <div class="service-flow--coordinator__layout--left">
-      <div class="service-flow--coordinator__photo--1"></div>
-      <div class="english service-flow--coordinator__title__container">
-        <h2 class="service-flow--coordinator__title">SERVICE<br>FLOW</h2>
-        <div class="service-flow--coordinator__number">01</div>
-      </div>
-    </div>
-    <div class="service-flow--coordinator__layout--right">
-      <div class="service-flow--coordinator__subject__container">
-        <div class="service-flow--coordinator__subject">幹事</div>
-        <div class="service-flow--coordinator__subject">参加者</div>
-      </div>
-      <div class="service-flow--coordinator__arrow__container__position">
-        <div class="service-flow--coordinator__arrow__container effect__hover--light arrow-left">
-          <img src="assets/arrow-left.svg" alt="arrow-left">
-        </div>
-      </div>
-      <div class="service-flow--coordinator__layout--right-detail">
-        <div class="service-flow--coordinator__layout--right-detail__position">
-          <div class="service-flow--coordinator__description__container">
-            <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
-            <p class="service-flow--coordinator__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
-          </div>
-          <div class="english service-flow--coordinator__btn">
-            <div class="disabled">BACK</div>
-            <div class="effect__hover--scale" id="next">NEXT</div>
+  <div class="service-flow--coordinator__box">
+    <section class="service-flow--coordinator service-flow--coordinator--1" id="service-flow">
+      <h2 class="english service-flow--coordinator__title">SERVICE<br>FLOW</h2>
+      <div class="service-flow__layout--up">
+        <div class="service-flow--coordinator__photo--1"></div>
+        <div class="service-flow--coordinator__subject__container">
+          <div class="service-flow--coordinator__subject">幹事</div>
+          <div class="service-flow--coordinator__subject">参加者</div>
+          <div class="service-flow--coordinator__arrow__container effect__hover--light arrow-left">
+            <img src="assets/arrow-left.svg" alt="arrow-left">
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="service-flow--coordinator service-flow--hide service-flow--coordinator--2" id="service-flow">
-    <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
-    <div class="service-flow--coordinator__layout--left">
-      <div class="service-flow--coordinator__photo--1"></div>
-      <div class="english service-flow--coordinator__title__container">
-        <h2 class="service-flow--coordinator__title">SERVICE<br>FLOW</h2>
-        <div class="service-flow--coordinator__number">02</div>
-      </div>
-    </div>
-    <div class="service-flow--coordinator__layout--right">
-      <div class="service-flow--coordinator__subject__container">
-        <div class="service-flow--coordinator__subject">幹事</div>
-        <div class="service-flow--coordinator__subject">参加者</div>
-      </div>
-      <div class="service-flow--coordinator__arrow__container__position">
-        <div class="service-flow--coordinator__arrow__container effect__hover--light arrow-left">
-          <img src="assets/arrow-left.svg" alt="arrow-left">
+      <div class="service-flow__layout--down">
+        <div class="slider">
+          <div class="service-flow__slider__position--coordinator service-flow__slider__container--show  service-flow__slider__container--1">
+            <div class="service-flow__slider__container">
+              <div class="english service-flow--coordinator__number">01</div>
+              <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
+              <div class="service-flow--coordinator__description__container">
+                <div class="service-flow--coordinator__description__contents">
+                  <h3 class="service-flow--coordinator__description__title">いつものSNSから簡単にグループへ招待</h3>
+                  <p class="service-flow--coordinator__description">幹事はグループを作成したら、SNSなどでURLを共有するだけでグループに招待できます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-flow__slider__position--coordinator service-flow__slider__container--2">
+            <div class="service-flow__slider__container">
+              <div class="english service-flow--coordinator__number">02</div>
+              <img class="service-flow--coordinator__app--2" src="assets/service-flow-coordinator-app2.png" alt="service-flow--coordinator-app2">
+              <div class="service-flow--coordinator__description__container">
+                <div class="service-flow--coordinator__description__contents">
+                  <h3 class="service-flow--coordinator__description__title">イベント情報を登録したら自動で企画開始</h3>
+                  <p class="service-flow--coordinator__description">イベントの開催頻度を設定することで、開催時期が近くなると通知が来て、App側から企画を促します。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-flow__slider__position--coordinator service-flow__slider__container--3">
+            <div class="service-flow__slider__container">
+              <div class="english service-flow--coordinator__number">03</div>
+              <img class="service-flow--coordinator__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--coordinator-app1">
+              <div class="service-flow--coordinator__description__container">
+                <div class="service-flow--coordinator__description__contents">
+                  <h3 class="service-flow--coordinator__description__title">参加者からの投票をみてイベント概要を決定</h3>
+                  <p class="service-flow--coordinator__description">グループメンバーによる投票結果から、幹事は最終決定をするだけでイベントを動かすことができます。店舗への電話予約だけが幹事のお仕事です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="english service-flow--coordinator__btn-container">
+          <div class="service-flow--coordinator__btn-box">
+            <div class="disabled back--coordinator">BACK</div>
+            <div class="effect__hover--scale next--coordinator">NEXT</div>
+          </div>
         </div>
       </div>
-      <div class="service-flow--coordinator__layout--right-detail">
-        <div class="service-flow--coordinator__layout--right-detail__position">
-          <div class="service-flow--coordinator__description__container">
-            <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
-            <p class="service-flow--coordinator__description">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ。</p>
-          </div>
-          <div class="english service-flow--coordinator__btn">
-            <div class="effect__hover--scale" id="back">BACK</div>
-            <div class="disabled">NEXT</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
 
 
@@ -206,39 +196,66 @@
 
 <!-- 参加者 -->
 <div class="service-flow--participant__box">
-<section class="service-flow--participant service-flow--participant--1" id="service-flow">
-  <img class="service-flow--participant__app--1" src="assets/service-flow-coordinator-app1.png" alt="service-flow--participant-app1">
-  <div class="service-flow--participant__layout--left">
-    <div class="service-flow--participant__subject__container">
-      <div class="service-flow--participant__subject">幹事</div>
-      <div class="service-flow--participant__subject">参加者</div>
-    </div>
-    <div class="service-flow--participant__arrow__container__position">
-      <div class="service-flow--participant__arrow__container effect__hover--light arrow-right">
-        <img src="assets/arrow-right.svg" alt="arrow-right">
-      </div>
-    </div>
-    <div class="service-flow--participant__layout--left-detail">
-      <div class="service-flow--participant__layout--left-detail__position">
-        <div class="service-flow--participant__description__container">
-          <h3 class="service-flow--participant__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
-          <p class="service-flow--participant__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
-        </div>
-        <div class="english service-flow--participant__btn">
-          <div class="disabled">BACK</div>
-          <div class="effect__hover--scale" id="next">NEXT</div>
+  <section class="service-flow--participant service-flow--participant--1" id="service-flow">
+    <div class="service-flow__layout--up">
+      <div class="service-flow--participant__subject__container">
+        <div class="service-flow--participant__subject">幹事</div>
+        <div class="service-flow--participant__subject">参加者</div>
+        <div class="service-flow--participant__arrow__container effect__hover--light arrow-right">
+          <img src="assets/arrow-right.svg" alt="arrow-right">
         </div>
       </div>
+      <div class="service-flow--participant__photo--1"></div>
     </div>
-  </div>
-  <div class="service-flow--participant__layout--right">
-    <div class="service-flow--participant__photo--1"></div>
-    <div class="english service-flow--participant__title__container">
-      <div class="service-flow--participant__number">01</div>
+    <div class="service-flow__layout--down">
+      <div class="slider">
+        <div class="service-flow__slider__position--participant service-flow__slider__container--show  service-flow__slider__container--1">
+          <div class="service-flow__slider__container">
+            <div class="service-flow--participant__description__container">
+              <div class="service-flow--participant__description__contents">
+                <h3 class="service-flow--participant__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+                <p class="service-flow--participant__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+              </div>
+            </div>
+            <img class="service-flow--participant__app--1" src="assets/service-flow-participant-app1.png" alt="service-flow--participant-app1">
+            <div class="english service-flow--participant__number">01</div>
+          </div>
+        </div>
+        <div class="service-flow__slider__position--participant service-flow__slider__container--2">
+          <div class="service-flow__slider__container">
+            <div class="service-flow--participant__description__container">
+              <div class="service-flow--participant__description__contents">
+                <h3 class="service-flow--participant__description__title">イベントの企画が動き出したらみんなで投票</h3>
+                <p class="service-flow--participant__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
+              </div>
+            </div>
+            <img class="service-flow--participant__app--2" src="assets/service-flow-participant-app2.png" alt="service-flow--participant-app2">
+            <div class="english service-flow--participant__number">02</div>
+          </div>
+        </div>
+        <div class="service-flow__slider__position--participant service-flow__slider__container--3">
+          <div class="service-flow__slider__container">
+            <div class="service-flow--participant__description__container">
+              <div class="service-flow--participant__description__contents">
+                <h3 class="service-flow--participant__description__title">イベントの情報はAppで管理、いつでも確認</h3>
+                <p class="service-flow--participant__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
+              </div>
+            </div>
+            <img class="service-flow--participant__app--3" src="assets/service-flow-participant-app3.png" alt="service-flow--participant-app3">
+            <div class="english service-flow--participant__number">03</div>
+          </div>
+        </div>
+      </div>
+      <div class="english service-flow--participant__btn-container">
+        <div class="service-flow--participant__btn-box">
+          <div class="disabled back--participant">BACK</div>
+        <div class="effect__hover--scale next--participant">NEXT</div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 </div>
+
 </div>
 
 
@@ -284,7 +301,5 @@
       </div>
     </div>
   </footer>
-
-  <script src="reunion_lp.js"></script>
 </body>
 </html>

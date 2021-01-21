@@ -1,48 +1,108 @@
 // service-flowのnext
+$(function(){
+  $(".next--coordinator").click(function(){
+    var result = $('.service-flow__slider__position--coordinator').eq(0).css('right');
+    var result1 = $('.service-flow__slider__position--coordinator').eq(1).css('right');
+    var result2 = $('.service-flow__slider__position--coordinator').eq(2).css('right');
+    if(result === "0px"){
+      $(".service-flow__slider__position--coordinator").eq(0).animate({right:'100%',}, "slow");
+      $(".service-flow__slider__position--coordinator").eq(1).animate({right:'0%',},"slow");
+      $(".back--coordinator").removeClass("disabled");
+      $(".back--coordinator").addClass("effect__hover--scale");
+    } else if(result1 === "0px") {
+      $(".service-flow__slider__position--coordinator").eq(1).animate({right:'100%',}, "slow");
+      $(".service-flow__slider__position--coordinator").eq(2).animate({right:'0%',},"slow");
+      $(".next--coordinator").removeClass("effect__hover--scale");
+      $(".next--coordinator").addClass("disabled");
+    }
+  });
+});
 
 $(function(){
-  $("#next").click(function(){
-    $('.service-flow--coordinator--1').fadeOut(500);
-    $('.service-flow--coordinator--2').css('display','flex').hide().delay(500).fadeIn(500);
-  })
+  $(".next--participant").click(function(){
+    var result = $('.service-flow__slider__position--participant').eq(0).css('right');
+    var result1 = $('.service-flow__slider__position--participant').eq(1).css('right');
+    var result2 = $('.service-flow__slider__position--participant').eq(2).css('right');
+    if(result === "0px"){
+      $(".service-flow__slider__position--participant").eq(0).animate({right:'100%',}, "slow");
+      $(".service-flow__slider__position--participant").eq(1).animate({right:'0%',},"slow");
+      $(".back--participant").removeClass("disabled");
+      $(".back--participant").addClass("effect__hover--scale");
+    } else if(result1 === "0px") {
+      $(".service-flow__slider__position--participant").eq(1).animate({right:'100%',}, "slow");
+      $(".service-flow__slider__position--participant").eq(2).animate({right:'0%',},"slow");
+      $(".next--participant").removeClass("effect__hover--scale");
+      $(".next--participant").addClass("disabled");
+    }
+  });
 });
 
 // service-flowのback
 
 $(function(){
-  $("#back").click(function(){
-    $('.service-flow--coordinator--2').fadeOut(500);
-    $('.service-flow--coordinator--1').css('display','flex').hide().delay(500).fadeIn(500);
-  })
+  $(".back--coordinator").click(function(){
+    var result = $('.service-flow__slider__position--coordinator').eq(0).css('right');
+    var result1 = $('.service-flow__slider__position--coordinator').eq(1).css('right');
+    var result2 = $('.service-flow__slider__position--coordinator').eq(2).css('right');
+    if(result2 === "0px"){
+      $(".service-flow__slider__position--coordinator").eq(2).animate({right:'-100%',}, "slow");
+      $(".service-flow__slider__position--coordinator").eq(1).animate({right:'0%',},"slow");
+      $(".next--coordinator").removeClass("disabled");
+      $(".next--coordinator").addClass("effect__hover--scale");
+    } else if(result1 === "0px") {
+      $(".service-flow__slider__position--coordinator").eq(1).animate({right:'-100%',}, "slow");
+      $(".service-flow__slider__position--coordinator").eq(0).animate({right:'0%',},"slow");
+      $(".back--coordinator").removeClass("effect__hover--scale");
+      $(".back--coordinator").addClass("disabled");
+    }
+  });
+});
+
+$(function(){
+  $(".back--participant").click(function(){
+    var result = $('.service-flow__slider__position--participant').eq(0).css('right');
+    var result1 = $('.service-flow__slider__position--participant').eq(1).css('right');
+    var result2 = $('.service-flow__slider__position--participant').eq(2).css('right');
+    if(result2 === "0px"){
+      $(".service-flow__slider__position--participant").eq(2).animate({right:'-100%',}, "slow");
+      $(".service-flow__slider__position--participant").eq(1).animate({right:'0%',},"slow");
+      $(".next--participant").removeClass("disabled");
+      $(".next--participant").addClass("effect__hover--scale");
+    } else if(result1 === "0px") {
+      $(".service-flow__slider__position--participant").eq(1).animate({right:'-100%',}, "slow");
+      $(".service-flow__slider__position--participant").eq(0).animate({right:'0%',},"slow");
+      $(".back--participant").removeClass("effect__hover--scale");
+      $(".back--participant").addClass("disabled");
+    }
+  });
 });
 
 // service-flowの矢印
 $(function(){
   $(".arrow-left").click(function(){
+    console.log("left")
     $(".service-flow--coordinator__box").animate({left:'0%',}, "slow");
     $(".service-flow--participant__box").animate({right:'0%',},"slow");
   });
 });
 
-// animate( { width: 'toggle',}, 'slow' )
-
 $(function(){
   $(".arrow-right").click(function(){
+    var result = $('.service-flow__slider__position--participant').eq(0).css('right');
+    var result1 = $('.service-flow__slider__position--participant').eq(1).css('right');
+    var result2 = $('.service-flow__slider__position--participant').eq(2).css('right');
+
+    if(result !== "0px" && result1 !== "0px"){
+      $(".service-flow__slider__position--participant").eq(0).css("right","-100%");
+      $(".service-flow__slider__position--participant").eq(1).css("right","-100%");
+    } else if(result !== "0px"){
+      console.log(123)
+      $(".service-flow__slider__position--participant").eq(0).css("right","-100%");
+    }
     $(".service-flow--participant__box").animate({right:'-100%',},"slow");
-    $(".service-flow--coordinator__box").css({left:'0%',},"slow");
+    $(".service-flow--coordinator__box").animate({left:'0%',},"slow");
   });
 });
-
-// $(function(){
-//   $("#arrow-left").click(function(){
-//     if($(".service-flow--participant--1").hasClass("service-flow--participant")){
-//       $('.service-flow--participant--1').removeClass('service-flow--participant');
-//       $('.service-flow--participant--1').addClass('service-flow--hide');
-//       $(".service-flow--coordinator--1").removeClass("service-flow--hide");
-//       $(".service-flow--coordinator--1").addClass("service-flow--coordinator");
-//     }
-//   });
-// });
 
 // スクロール
 
@@ -93,3 +153,11 @@ $(function() {
 
 
 // 参加者 幹事のアニメーション
+
+$(document).ready(function(){
+  $('.service-flow-items').slick({
+    arrows:true,
+    swipe:false
+  }
+  );
+});
