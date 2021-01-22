@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header is-show">
+  <header class="header__web--toggle header is-show--web">
     <nav class="nav">
       <div>
         <img src="assets/REUNION.svg" alt="REUNION">
@@ -28,6 +28,37 @@
       </ul>
     </nav>
   </header>
+
+  <!-- <header class="header__tablet--toggle header__tablet is-show--tablet">
+    <div class="header__tablet__container">
+      <div class="icon__container">
+        <div class="icon">
+          <span class="icon_line icon_line1"></span>
+          <span class="icon_line icon_line2"></span>
+        </div>
+      </div>
+      <div class="header__menu--show">
+        <div class="header__menu--show__container">
+          <div class="close-icon__container">
+            <div class="close-icon"></div>
+          </div>
+          <div class="logo__container">
+            <img src="assets/REUNION.svg" alt="REUNION">
+          </div>
+          <div class="menu__list__container">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#overview">OVERVIEW</a></li>
+              <li class="menu__item"><a class="menu__link" href="#showreel">SHOWREEL</a></li>
+              <li class="menu__item"><a class="menu__link" href="#features">FEATURES</a></li>
+              <li class="menu__item"><a class="menu__link" href="#service-flow">SERVICE FLOW</a></li>
+              <li class="menu__item"><a class="menu__link" href="#usecases">USECASES</a></li>
+              <li class="menu__link--decoration"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> -->
 
   <section class="top">
     <div class="top__content">
@@ -59,7 +90,6 @@
   <section>
     <div class="overview__layout">
       <div class="overview__container">
-        <img class="position__pattern2" src="assets/pattern2.svg">
         <div class="overview-photo--1"></div>
         <div class="overview__box" id="overview">
             <h2 class="english overview__title">OVERVIEW</h2>
@@ -71,6 +101,7 @@
               出欠管理・告知ができるクローズドSNSです同窓生と
               コミュニケーションを楽しんだり、同窓会の出欠管
               理・告知ができるクローズドSNSです</p>
+            <div class="position__pattern2"></div>
         </div>
       </div>
     
@@ -80,8 +111,10 @@
 
   <section class="showreel" id="showreel">
     <h2 class="english showreel__title">SHOWREEL</h2>
-    <div class="video">VIDEO</div>
-    <img class="position__pattern3" src="assets/pattern3.svg">
+    <div class="video-box">
+      <iframe class="video" src="https://www.youtube.com/embed/7GX12CaOGRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="position__pattern3"></div>
   </section>
 
   <section class="space">
