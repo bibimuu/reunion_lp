@@ -4,33 +4,31 @@ $(function(){
     var result = $('.service-flow--coordinator__number').eq(0).css('left');
     var result1 = $('.service-flow--coordinator__number').eq(1).css('left');
     if(result === "0px"){
-      $(".service-flow--coordinator__number").eq(0).animate({opacity:'0',left:'-100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1',left:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(0).animate({opacity:'1',left:'-100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1'},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1',left:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--coordinator__app").eq(0).animate({left:'-100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(1).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(1).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(0).animate({left:'-100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(1).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:'0',right:'100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:'1',right:'100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
 
       $(".back--coordinator").removeClass("disabled");
-      $(".back--coordinator").addClass("effect__hover--scale");
+      $(".back--coordinator").addClass("underline");
     } else if(result1 === "0px") {
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'0',left:'-100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(2).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(2).animate({opacity:'1',left:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1',left:'-100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(2).animate({opacity:'1'},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(2).animate({opacity:'1',left:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--coordinator__app").eq(1).animate({left:'-100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(2).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(2).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(1).animate({left:'-100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(2).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'0',right:'100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".next--coordinator").removeClass("effect__hover--scale");
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1',right:'100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:'1'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
+      $(".next--coordinator").removeClass("underline");
       $(".next--coordinator").addClass("disabled");
     }
   });
@@ -41,33 +39,31 @@ $(function(){
     var result = $('.service-flow--participant__number').eq(0).css('right');
     var result1 = $('.service-flow--participant__number').eq(1).css('right');
     if(result === "0px"){
-      $(".service-flow--participant__number").eq(0).animate({opacity:'0',right:'100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(1).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(1).animate({opacity:'1',right:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(0).animate({opacity:'0',right:'100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:'0'},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:'1',right:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--participant__app").eq(0).animate({left:'-100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(1).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(1).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--participant__app").eq(0).animate({left:'-100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__app").eq(1).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--participant__description__contents").eq(0).animate({opacity:'0',right:'100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(0).animate({opacity:'0',right:'100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'0'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
 
       $(".back--participant").removeClass("disabled");
-      $(".back--participant").addClass("effect__hover--scale");
+      $(".back--participant").addClass("underline");
     } else if(result1 === "0px") {
-      $(".service-flow--participant__number").eq(1).animate({opacity:'0',right:'100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(2).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(2).animate({opacity:'1',right:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:'1',right:'100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(2).animate({opacity:'1'},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(2).animate({opacity:'1',right:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--participant__app").eq(1).animate({left:'-100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(2).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(2).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--participant__app").eq(1).animate({left:'-100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__app").eq(2).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'0',right:'100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(2).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(2).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".next--participant").removeClass("effect__hover--scale");
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'1',right:'100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(2).animate({opacity:'1'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(2).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
+      $(".next--participant").removeClass("underline");
       $(".next--participant").addClass("disabled");
     }
   });
@@ -81,32 +77,30 @@ $(function(){
     var result2 = $('.service-flow--participant__number').eq(2).css('right');
 
     if(result2 === "0px"){
-      $(".service-flow--participant__number").eq(2).animate({opacity:'0',right:'-100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(1).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(1).animate({opacity:'1',right:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(2).animate({opacity:"1",right:'-100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:"1"},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:'1',right:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--participant__app").eq(2).animate({left:'100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(1).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(1).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--participant__app").eq(2).animate({left:'100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__app").eq(1).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--participant__description__contents").eq(2).animate({opacity:'0',right:'-100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(2).animate({opacity:"1",right:'-100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:"1"}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
       $(".next--participant").removeClass("disabled");
-      $(".next--participant").addClass("effect__hover--scale");
+      $(".next--participant").addClass("underline");
     } else if(result1 === "0px") {
-      $(".service-flow--participant__number").eq(1).animate({opacity:'0',right:'-100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(0).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--participant__number").eq(0).animate({opacity:'1',right:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(1).animate({opacity:"1",right:'-100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(0).animate({opacity:"1"},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--participant__number").eq(0).animate({opacity:'1',right:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--participant__app").eq(1).animate({left:'100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(0).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__app").eq(0).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--participant__app").eq(1).animate({left:'100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__app").eq(0).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--participant__description__contents").eq(1).animate({opacity:'0',right:'-100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(0).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--participant__description__contents").eq(0).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".back--participant").removeClass("effect__hover--scale");
+      $(".service-flow--participant__description__contents").eq(1).animate({opacity:"1",right:'-100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(0).animate({opacity:"1"}, { duration: 500, easing: 'swing', });
+      $(".service-flow--participant__description__contents").eq(0).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
+      $(".back--participant").removeClass("underline");
       $(".back--participant").addClass("disabled");
     }
   });
@@ -118,32 +112,30 @@ $(function(){
     var result2 = $('.service-flow--coordinator__number').eq(2).css('left');
 
     if(result2 === "0px"){
-      $(".service-flow--coordinator__number").eq(2).animate({opacity:'0',left:'100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1',left:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(2).animate({opacity:"1",left:'100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:"1"},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:'1',left:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--coordinator__app").eq(2).animate({left:'100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(1).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(1).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(2).animate({left:'100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(1).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:'0',right:'-100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(2).animate({opacity:"1",right:'-100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:"1"}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
       $(".next--coordinator").removeClass("disabled");
-      $(".next--coordinator").addClass("effect__hover--scale");
+      $(".next--coordinator").addClass("underline");
     } else if(result1 === "0px") {
-      $(".service-flow--coordinator__number").eq(1).animate({opacity:'0',left:'100%',},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(0).animate({opacity:'0'},  { duration: 1000, easing: 'swing', } );
-      $(".service-flow--coordinator__number").eq(0).animate({opacity:'1',left:'0%',},  { duration: 1100, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(1).animate({opacity:"1",left:'100%',},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(0).animate({opacity:"1"},  { duration: 500, easing: 'swing', } );
+      $(".service-flow--coordinator__number").eq(0).animate({opacity:'1',left:'0%',},  { duration: 500, easing: 'swing', } );
 
-      $(".service-flow--coordinator__app").eq(1).animate({left:'100%',opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(0).animate({left:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__app").eq(0).animate({opacity:'1'}, { duration: 1100, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(1).animate({left:'100%'}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__app").eq(0).animate({left:'0%',}, { duration: 500, easing: 'swing', });
 
-      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:'0',right:'-100%',}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:'0'}, { duration: 1000, easing: 'swing', });
-      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:'1',right:'0%',}, { duration: 1000, easing: 'swing', });
-      $(".back--coordinator").removeClass("effect__hover--scale");
+      $(".service-flow--coordinator__description__contents").eq(1).animate({opacity:"1",right:'-100%',}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:"1"}, { duration: 500, easing: 'swing', });
+      $(".service-flow--coordinator__description__contents").eq(0).animate({opacity:'1',right:'0%',}, { duration: 500, easing: 'swing', });
+      $(".back--coordinator").removeClass("underline");
       $(".back--coordinator").addClass("disabled");
     }
   });
