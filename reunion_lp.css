@@ -484,38 +484,65 @@ h3 {
   width: 100vw;
 }
 
-.service-flow__slider__position--coordinator {
-  position: absolute;
-  right: -100%;
-}
-
 .service-flow__slider__container {
   position: relative;
   height: 34vh;
   display: flex;
 }
 
-.service-flow__slider__container--show {
-  right: 0%;
+.service-flow--coordinator__number__container {
+  width: 25vw;
+  height: 100%;
+  margin-left: 10vw;
+  margin-right: 15vw;
+}
+
+.service-flow--coordinator__number__box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .service-flow--coordinator__number {
   font-size: 130px;
   color: #d56042;
-  width: 50vw;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 10vw;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  opacity: 0;
 }
 
-.service-flow--coordinator__app--1,
-.service-flow--coordinator__app--2,
-.service-flow--coordinator__app--3 {
+.service-flow--coordinator__number--show {
+  left: 0;
+  opacity: 1;
+}
+
+.service-flow--coordinator__app__container {
   position: absolute;
-  top: -50%;
-  left: 47%;
-  transform: translate(-50%, 0%);
+  width: 20vw;
+  height: 70vh;
+  top: -35%;
+  left: 38%;
+}
+
+.service-flow--coordinator__app__box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.service-flow--coordinator__app {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+
+.service-flow--coordinator__app--show {
+  left: 0%;
+  opacity: 1;
 }
 
 .service-flow--coordinator__title {
@@ -527,15 +554,31 @@ h3 {
 }
 
 .service-flow--coordinator__description__container {
-  width: 50vw;
-  padding-right: 20vw;
+  width: 40vw;
+  height: 100%;
+  margin-right: 20vw;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+}
+
+.service-flow--coordinator__description__box {
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  overflow: hidden;
 }
 
 .service-flow--coordinator__description__contents {
   width: 20vw;
+  position: absolute;
+  right: -100%;
+  bottom: 0;
+  opacity: 0;
+}
+
+.service-flow--coordinator__description__contents--show {
+  right: 0;
+  opacity: 1;
 }
 
 .service-flow--coordinator__description__title {
@@ -647,28 +690,59 @@ h3 {
   display: flex;
 }
 
-.service-flow__slider__container--show {
-  right: 0%;
+.service-flow--participant__number__container {
+  width: 25vw;
+  height: 100%;
+  margin-left: 15vw;
+  margin-right: 10vw;
+}
+
+.service-flow--participant__number__box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .service-flow--participant__number {
   font-size: 130px;
   color: #c34b2c;
-  width: 50vw;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding-right: 10vw;
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  opacity: 0;
 }
 
-.service-flow--participant__app--1,
-.service-flow--participant__app--2,
-.service-flow--participant__app--3 {
+.service-flow--participant__number--show {
+  right: 0;
+  opacity: 1;
+}
+
+.service-flow--participant__app__container {
   position: absolute;
-  top: -50%;
-  left: 53%;
-  transform: translate(-50%, 0%);
+  width: 20vw;
+  height: 70vh;
+  top: -35%;
+  left: 45%;
+}
+
+.service-flow--participant__app__box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.service-flow--participant__app {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+
+.service-flow--participant__app--show {
+  left: 0%;
+  opacity: 1;
 }
 
 .service-flow--participant__title {
@@ -681,14 +755,30 @@ h3 {
 
 .service-flow--participant__description__container {
   width: 50vw;
+  height: 100%;
   padding-left: 20vw;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+}
+
+.service-flow--participant__description__box {
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  overflow: hidden;
 }
 
 .service-flow--participant__description__contents {
   width: 20vw;
+  position: absolute;
+  right: -100%;
+  bottom: 0;
+  opacity: 0;
+}
+
+.service-flow--participant__description__contents--show {
+  right: 0;
+  opacity: 1;
 }
 
 .service-flow--participant__description__title {
