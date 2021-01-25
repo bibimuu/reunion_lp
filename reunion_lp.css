@@ -420,11 +420,19 @@ h3 {
 
 /* SERVICE-FLOW BOTH */
 
-.service-flow--both {
+.service-flow--both--web {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.service-flow__top--tablet {
+  display: none;
+}
+
+.service-flow--both--tablet {
+  display: none;
 }
 
 /* SERVICE-FLOW--coordinator */
@@ -511,10 +519,9 @@ h3 {
 }
 
 .service-flow--coordinator__number__container {
-  width: 25vw;
+  width: 40vw;
   height: 100%;
   margin-left: 10vw;
-  margin-right: 15vw;
 }
 
 .service-flow--coordinator__number__box {
@@ -540,8 +547,8 @@ h3 {
 
 .service-flow--coordinator__app__container {
   position: absolute;
-  width: 20vw;
-  height: 70vh;
+  /* width: 20vw;
+  height: 70vh; */
   top: -35%;
   left: 38%;
 }
@@ -577,7 +584,7 @@ h3 {
 .service-flow--coordinator__description__container {
   width: 40vw;
   height: 100%;
-  margin-right: 20vw;
+  margin-right: 18vw;
   display: flex;
   justify-content: flex-end;
 }
@@ -613,7 +620,7 @@ h3 {
 .service-flow--coordinator__btn-container {
   height: 33vh;
   width: 100vw;
-  padding: 0 20vw;
+  padding: 0 18vw;
   display: flex;
   justify-content: flex-end;
 }
@@ -741,8 +748,8 @@ h3 {
 
 .service-flow--participant__app__container {
   position: absolute;
-  width: 20vw;
-  height: 70vh;
+  /* width: 20vw;
+  height: 70vh; */
   top: -35%;
   left: 45%;
 }

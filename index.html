@@ -155,25 +155,29 @@
       </div>
 
       <div class="features__layout--right--tablet">
-        <div class="features__description__container--tablet">
-          <div class="english features__description-number">01</div>
-          <h3 class="features__description-title">SNSで簡単招待</h3>
-          <p class="features__description">グループを作成したら、いつも使用しているSNSのグループにURLを共有するだけで簡単に招待できます</p>
+        <div>
+          <div class="features__description__container--tablet features__description__container--tablet--no-right">
+            <div class="english features__description-number">01</div>
+            <h3 class="features__description-title">SNSで簡単招待</h3>
+            <p class="features__description">グループを作成したら、いつも使用しているSNSのグループにURLを共有するだけで簡単に招待できます</p>
+          </div>
+          <div class="features__description__container--tablet features__description__container--tablet--no-right">
+            <div class="english features__description-number">02</div>
+            <h3 class="features__description-title">イベント開催頻度の設定</h3>
+            <p class="features__description">定期的に集まりたいイベントなどは頻度を設定することで、アプリ側から企画を始動させます</p>
+          </div>
         </div>
-        <div class="features__description__container--tablet">
-          <div class="english features__description-number">02</div>
-          <h3 class="features__description-title">イベント開催頻度の設定</h3>
-          <p class="features__description">定期的に集まりたいイベントなどは頻度を設定することで、アプリ側から企画を始動させます</p>
-        </div>
-        <div class="features__description__container--tablet">
-          <div class="english features__description-number">03</div>
-          <h3 class="features__description-title">決め事は全て投票制</h3>
-          <p class="features__description">企画を進めていく時には、グループのメンバーで投票していきます。幹事は投票の多いものに決定するだけです</p>
-        </div>
-        <div class="features__description__container--tablet">
-          <div class="english features__description-number">04</div>
-            <h3 class="features__description-title">通知でお知らせ</h3>
-            <p class="features__description">イベントでの動きは通知でお知らせします。イベントは参加者全員で作り出していきます</p>
+        <div>
+          <div class="features__description__container--tablet">
+            <div class="english features__description-number">03</div>
+            <h3 class="features__description-title">決め事は全て投票制</h3>
+            <p class="features__description">企画を進めていく時には、グループのメンバーで投票していきます。幹事は投票の多いものに決定するだけです</p>
+          </div>
+          <div class="features__description__container--tablet">
+            <div class="english features__description-number">04</div>
+              <h3 class="features__description-title">通知でお知らせ</h3>
+              <p class="features__description">イベントでの動きは通知でお知らせします。イベントは参加者全員で作り出していきます</p>
+          </div>
         </div>
       </div>
     </div>
@@ -182,7 +186,7 @@
 
 
 
-<div class="service-flow--both">
+<div class="service-flow--both--web">
 <!-- 幹事 -->
   <div class="service-flow--coordinator__box">
     <section class="service-flow--coordinator service-flow--coordinator--1" id="service-flow">
@@ -242,68 +246,178 @@
     </section>
   </div>
 
-
-
-
-
 <!-- 参加者 -->
-<div class="service-flow--participant__box">
-  <section class="service-flow--participant service-flow--participant--1" id="service-flow">
-    <div class="service-flow__layout--up">
-      <div class="service-flow--participant__subject__container">
-        <div class="service-flow--participant__subject">幹事</div>
-        <div class="service-flow--participant__subject">参加者</div>
-        <div class="service-flow--participant__arrow__container effect__hover--light arrow-right">
-          <img src="assets/arrow-right.svg" alt="arrow-right">
+  <div class="service-flow--participant__box">
+    <section class="service-flow--participant service-flow--participant--1" id="service-flow">
+      <div class="service-flow__layout--up">
+        <div class="service-flow--participant__subject__container">
+          <div class="service-flow--participant__subject">幹事</div>
+          <div class="service-flow--participant__subject">参加者</div>
+          <div class="service-flow--participant__arrow__container effect__hover--light arrow-right">
+            <img src="assets/arrow-right.svg" alt="arrow-right">
+          </div>
+        </div>
+        <div class="service-flow--participant__photo--1"></div>
+      </div>
+      <div class="service-flow__layout--down">
+        <div class="slider">
+          <div class="service-flow__slider__container">
+            <div class="service-flow--participant__description__container">
+              <div class="service-flow--participant__description__box">
+                <div class="service-flow--participant__description__contents service-flow--participant__description__contents--show">
+                  <h3 class="service-flow--participant__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+                  <p class="service-flow--participant__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+                </div>
+                <div class="service-flow--participant__description__contents">
+                  <h3 class="service-flow--participant__description__title">イベントの企画が動き出したらみんなで投票</h3>
+                  <p class="service-flow--participant__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
+                </div>
+                <div class="service-flow--participant__description__contents">
+                  <h3 class="service-flow--participant__description__title">イベントの情報はAppで管理、いつでも確認</h3>
+                  <p class="service-flow--participant__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
+                </div>
+              </div>
+            </div>
+            <div class="service-flow--participant__app__container">
+              <div class="service-flow--participant__app__box">
+                <img class="service-flow--participant__app service-flow--participant__app--show" src="assets/service-flow-participant-app1.jpg" alt="service-flow--participant-app1">
+                <img class="service-flow--participant__app" src="assets/service-flow-participant-app2.jpg" alt="service-flow--participant-app2">
+                <img class="service-flow--participant__app" src="assets/service-flow-participant-app3.jpg" alt="service-flow--participant-app3">
+              </div>
+            </div>
+            <div class="service-flow--participant__number__container">
+              <div class="service-flow--participant__number__box">
+                <div class="english service-flow--participant__number service-flow--participant__number--show">01</div>
+                <div class="english service-flow--participant__number">02</div>
+                <div class="english service-flow--participant__number">03</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="english service-flow--participant__btn-container">
+          <div class="service-flow--participant__btn-box">
+            <div class="disabled back--participant">BACK</div>
+          <div class="underline next--participant">NEXT</div>
+          </div>
         </div>
       </div>
-      <div class="service-flow--participant__photo--1"></div>
+    </section>
+  </div>
+</div>
+
+
+<!-- TABLET -->
+
+<div class="service-flow__top--tablet">
+  <div class="service-flow__top__bg">
+    <h2 class="english service-flow--coordinator__title">SERVICE<br>FLOW</h2>
+  </div>
+  <div class="service-flow--participant__photo--1"></div>
+</div>
+
+<div class="service-flow--both--tablet">
+  <!-- 幹事 -->
+  <section class="service-flow--coordinator__box--tablet">
+    <div class="service-flow--participant__subject__container">
+      <div class="service-flow--coordinator__subject service-flow--coordinator__subject__tab--1">幹事</div>
+      <div class="service-flow--coordinator__subject service-flow--coordinator__subject--light-color service-flow--coordinator__subject__tab--2">参加者</div>
     </div>
-    <div class="service-flow__layout--down">
-      <div class="slider">
-        <div class="service-flow__slider__container">
-          <div class="service-flow--participant__description__container">
-            <div class="service-flow--participant__description__box">
-              <div class="service-flow--participant__description__contents service-flow--participant__description__contents--show">
-                <h3 class="service-flow--participant__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
-                <p class="service-flow--participant__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
-              </div>
-              <div class="service-flow--participant__description__contents">
-                <h3 class="service-flow--participant__description__title">イベントの企画が動き出したらみんなで投票</h3>
-                <p class="service-flow--participant__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
-              </div>
-              <div class="service-flow--participant__description__contents">
-                <h3 class="service-flow--participant__description__title">イベントの情報はAppで管理、いつでも確認</h3>
-                <p class="service-flow--participant__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
-              </div>
+    <div class="service-flow__layout--coordinator--tablet">
+      <div class="service-flow__slider__container">
+        <div class="service-flow__appnumber__container--tablet">
+          <div class="service-flow--coordinator__app__container">
+            <div class="service-flow--coordinator__app__box">
+              <img class="service-flow--coordinator__app--tablet service-flow--coordinator__app--show" src="assets/service-flow-coordinator-app1.jpg" alt="service-flow--coordinator-app1">
+              <img class="service-flow--coordinator__app--tablet" src="assets/service-flow-coordinator-app2.jpg" alt="service-flow--coordinator-app2">
+              <img class="service-flow--coordinator__app--tablet" src="assets/service-flow-coordinator-app3.jpg" alt="service-flow--coordinator-app3">
             </div>
           </div>
-          <div class="service-flow--participant__app__container">
-            <div class="service-flow--participant__app__box">
-              <img class="service-flow--participant__app service-flow--participant__app--show" src="assets/service-flow-participant-app1.jpg" alt="service-flow--participant-app1">
-              <img class="service-flow--participant__app" src="assets/service-flow-participant-app2.jpg" alt="service-flow--participant-app2">
-              <img class="service-flow--participant__app" src="assets/service-flow-participant-app3.jpg" alt="service-flow--participant-app3">
+          <div class="service-flow--coordinator__number__container">
+            <div class="service-flow--coordinator__number__box">
+              <div class="english service-flow--coordinator__number--tablet service-flow--coordinator__number--show">01</div>
+              <div class="english service-flow--coordinator__number--tablet">02</div>
+              <div class="english service-flow--coordinator__number--tablet">03</div>
             </div>
           </div>
-          <div class="service-flow--participant__number__container">
-            <div class="service-flow--participant__number__box">
-              <div class="english service-flow--participant__number service-flow--participant__number--show">01</div>
-              <div class="english service-flow--participant__number">02</div>
-              <div class="english service-flow--participant__number">03</div>
+          <div class="service-flow--coordinator__description__container">
+            <div class="service-flow--coordinator__description__box">
+              <div class="service-flow--coordinator__description__contents--tablet service-flow--coordinator__description__contents--show">
+                <h3 class="service-flow--coordinator__description__title">いつものSNSから簡単にグループへ招待</h3>
+                <p class="service-flow--coordinator__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+              </div>
+              <div class="service-flow--coordinator__description__contents--tablet">
+                <h3 class="service-flow--coordinator__description__title">イベント情報を登録したら自動で企画開始</h3>
+                <p class="service-flow--coordinator__description">イベントの開催頻度を設定することで、開催時期が近くなると通知が来て、App側から企画を促します。</p>
+              </div>
+              <div class="service-flow--coordinator__description__contents--tablet">
+                <h3 class="service-flow--coordinator__description__title">参加者からの投票をみてイベント概要を決定</h3>
+                <p class="service-flow--coordinator__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="english service-flow--participant__btn-container">
-        <div class="service-flow--participant__btn-box">
-          <div class="disabled back--participant">BACK</div>
-        <div class="underline next--participant">NEXT</div>
+      <div class="english service-flow--coordinator__btn-container">
+        <div class="service-flow--coordinator__btn-box">
+          <div class="disabled back--coordinator">BACK</div>
+          <div class="underline next--coordinator">NEXT</div>
         </div>
       </div>
     </div>
   </section>
-</div>
 
+
+
+
+  <!-- 参加者 -->
+  <section class="service-flow--participant__box--tablet">
+    <div class="service-flow--participant__subject__container">
+      <div class="service-flow--coordinator__subject service-flow--coordinator__subject__tab--1">幹事</div>
+      <div class="service-flow--coordinator__subject service-flow--coordinator__subject--light-color service-flow--coordinator__subject__tab--2">参加者</div>
+    </div>
+    <div class="service-flow__layout--coordinator--tablet">
+      <div class="service-flow__slider__container">
+        <div class="service-flow__appnumber__container--tablet">
+          <div class="service-flow--coordinator__app__container">
+            <div class="service-flow--coordinator__app__box">
+              <img class="service-flow--participant__app--tablet service-flow--coordinator__app--show" src="assets/service-flow-participant-app1.jpg" alt="service-flow--participant-app1">
+              <img class="service-flow--participant__app--tablet" src="assets/service-flow-participant-app2.jpg" alt="service-flow--participant-app2">
+              <img class="service-flow--participant__app--tablet" src="assets/service-flow-participant-app3.jpg" alt="service-flow--participant-app3">
+            </div>
+          </div>
+          <div class="service-flow--coordinator__number__container">
+            <div class="service-flow--coordinator__number__box">
+              <div class="english service-flow--participant__number--tablet service-flow--coordinator__number--show">01</div>
+              <div class="english service-flow--participant__number--tablet">02</div>
+              <div class="english service-flow--participant__number--tablet">03</div>
+            </div>
+          </div>
+          <div class="service-flow--coordinator__description__container">
+            <div class="service-flow--coordinator__description__box">
+              <div class="service-flow--participant__description__contents--tablet service-flow--coordinator__description__contents--show">
+                <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+                <p class="service-flow--coordinator__description">幹事はグループを作成したら、SNSなどでURLを共有するだけでグループに招待できます。</p>
+              </div>
+              <div class="service-flow--participant__description__contents--tablet">
+                <h3 class="service-flow--coordinator__description__title">イベントの企画が動き出したらみんなで投票</h3>
+                <p class="service-flow--coordinator__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
+              </div>
+              <div class="service-flow--participant__description__contents--tablet">
+                <h3 class="service-flow--coordinator__description__title">イベントの情報はAppで管理、いつでも確認</h3>
+                <p class="service-flow--coordinator__description">グループメンバーによる投票結果から、幹事は最終決定をするだけでイベントを動かすことができます。店舗への電話予約だけが幹事のお仕事です。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="english service-flow--coordinator__btn-container">
+        <div class="service-flow--coordinator__btn-box">
+          <div class="disabled back--participant">BACK</div>
+          <div class="underline next--participant">NEXT</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 
