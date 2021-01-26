@@ -345,7 +345,7 @@ $(function(){
   });
 });
 
-// header for web
+// header for web 特定の位置空ヘッダーを出現させる
 
 $(function() {
   var $win = $(window),
@@ -361,6 +361,8 @@ $(function() {
     }
   });
 });
+
+// header for web 上にスクロールするとHeaderが現れる
 
 $(function() {
   var $win = $(window),
@@ -381,43 +383,22 @@ $(function() {
 
 // header for tab/phone
 
-// $(function() {
-//   var $win = $(window),
-//       showClass = 'is-show--tablet';
+$(function() {
+  var $win = $(window),
+      $header = $('.header--tablet--toggle'),
+      headerHeight = $header.outerHeight(),
+      startPos = 0;
 
-//   var result = $('.is-show--tablet').css('display');
-//   if(result !== "none"){
-//     console.log(123)
-//     $win.on('load scroll', function() {
-//       var value = $(this).scrollTop();
-//       if ( value > -10 ) {
-//         console.log(456)
-//         $(".header__tablet--toggle").removeClass("header__tablet");
-//         $(".header__tablet--toggle").addClass(showClass);
-//       } else {
-//         console.log(789)
-//         $(".header__tablet--toggle").addClass("header__tablet");
-//       }
-//     });
-//   }
-// });
-
-// $(function() {
-//   var $win = $(window),
-//       $header = $('header__tablet'),
-//       headerHeight = $header.outerHeight(),
-//       startPos = 0;
-
-//   $win.on('load scroll', function() {
-//     var value = $(this).scrollTop();
-//     if ( value > startPos && value > headerHeight ) {
-//       $header.css('top', '-' + headerHeight + 'px');
-//     } else {
-//       $header.css('top', '0');
-//     }
-//     startPos = value;
-//   });
-// });
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > startPos && value > headerHeight ) {
+      $header.css('top', '-' + headerHeight + 'px');
+    } else {
+      $header.css('top', '0');
+    }
+    startPos = value;
+  });
+});
 
 // メニューバー出し入れ
 $(function(){

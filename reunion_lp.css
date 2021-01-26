@@ -101,7 +101,7 @@ h3 {
 
 .position__app-screen {
   position: absolute;
-  top: 74%;
+  top: 75%;
   left: 40%;
   width: 40vw;
   z-index: 4;
@@ -140,7 +140,7 @@ h3 {
   left: 0;
 }
 
-.is-show--tablet {
+.header--is-show--tablet {
   display: none;
 }
 
@@ -189,7 +189,7 @@ h3 {
 
 .top__content {
   padding: 84px 10vw 0 10vw;
-  height: 80vh;
+  height: 83vh;
 }
 
 .decoration-line__box {
