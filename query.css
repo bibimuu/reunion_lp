@@ -4,10 +4,6 @@
     top: 25%;
   }
 
-  .position__app-screen {
-    top: 86%;
-  }
-
   .tablet {
     display: block;
   }
@@ -17,11 +13,6 @@
   }
 
   /* メニューバー */
-
-  .menu-bg {
-    /* background-color: rgba(0, 0, 0, 0);
-    height: 100%; */
-  }
 
   .header--tablet {
     background-color: #d56042;
@@ -170,6 +161,18 @@
 
   .nav__list {
     display: none;
+  }
+
+  .top__app__box--1,
+  .top__app__box--2 {
+    border: 5px solid #000000;
+    width: 200px;
+    height: 400px;
+  }
+
+  .top__app__container__position {
+    top: 82.2%;
+    left: 37%;
   }
 
   /* SOWREEL */
@@ -466,13 +469,6 @@
     width: 100vw;
   }
 
-  .position__app-screen {
-    top: 130%;
-    left: 5%;
-    height: 75vh;
-    width: 50vh;
-  }
-
   .position__pattern3 {
     display: none;
   }
@@ -524,6 +520,27 @@
 
   .download-icon__box {
     justify-content: flex-start;
+  }
+
+  .top__app__container__position {
+    top: 144%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .top__app__box--1,
+  .top__app__box--2 {
+    width: 132px;
+    height: 275px;
+  }
+
+  .top__app__box--1 {
+    margin-top: 140px;
+  }
+
+  .top__app__box--1,
+  .top__app__box--2 {
+    border-radius: 20px;
   }
 
   /* overview */
@@ -669,7 +686,7 @@
   }
 
   .service-flow--coordinator__btn-container {
-    padding: 0 5vw;
+    padding: 0 5vw 5vw 5vw;
     margin-top: -10vh;
   }
 
