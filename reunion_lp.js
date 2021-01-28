@@ -340,7 +340,22 @@ $(function(){
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
     $("html, body").animate({scrollTop:position}, speed, "swing");
-    $(".header__menu--show").animate({left:'-100%',}, "slow");
+    $(".header__menu--show").animate({left:'-100%',}, "fast");
+    $(".header--tablet__container").animate({ backgroundColor: 'rgba(0,0,0,0)'},"fast");
+
+    setTimeout( function(){
+      $(".header--tablet__container").css('height','0vh')
+         },500);
+         
+    $(".header--tablet__container").removeClass("no-scroll");
+    $(function(){
+    if($(".no-scroll").length) { 
+      $("body").css('overflow','hidden');
+    } else {
+      $("body").css('overflow','auto');
+    }
+  });
+
     return false;
   });
 });
@@ -403,12 +418,38 @@ $(function() {
 // メニューバー出し入れ
 $(function(){
   $(".icon__container").click(function(){
-    $(".header__menu--show").animate({left:"0%",},"slow");
+    $(".header--tablet__container").addClass("no-scroll");
+    // 全てのスクロール操作の制御（ウィンドウ表示域で固定）
+    $(function(){
+      if($(".no-scroll").length) { 
+        $("body").css('overflow','hidden');
+      } else {
+        $("body").css('overflow','auto');
+      }
+    });
+    $(".header__menu--show").animate({left:"0%",},"fast");
+    $(".header--tablet__container").css('height','100vh');
+    $(".header--tablet__container").animate({ backgroundColor: 'rgba(0,0,0,0.8)'},"fast");
   })
 })
 
 $(function(){
   $(".close-icon__container").click(function(){
-    $(".header__menu--show").animate({left:'-100%',}, "slow");
-  })
+    $(".header--tablet__container").removeClass("no-scroll");
+    $(function(){
+      if($(".no-scroll").length) { 
+        $("body").css('overflow','hidden');
+      } else {
+        $("body").css('overflow','auto');
+      }
+    });
+    $(".header__menu--show").animate({left:'-100%',}, "fast");
+    $(".header--tablet__container").animate({ backgroundColor: 'rgba(0,0,0,0)'},"fast");
+    setTimeout( function(){
+      $(".header--tablet__container").css('height','0vh')
+         },500);
+  });
 })
+
+
+

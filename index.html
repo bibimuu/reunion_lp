@@ -10,10 +10,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="reunion_lp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body>
-  <div class="all-screen">
   <header class="header__web--toggle header header--is-show--web">
     <nav class="nav">
       <div>
@@ -38,26 +39,24 @@
           <span class="icon_line icon_line2"></span>
         </div>
       </div>
-      <div class="header__menu--show">
-        <div class="header__menu--show__container">
+        <div class="header__menu--show">
           <div class="close-icon__container">
-            <div class="close-icon"></div>
+            <span class="batsu"></span>
           </div>
           <div class="logo__container">
             <img src="assets/REUNION.svg" alt="REUNION">
           </div>
           <div class="menu__list__container">
             <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="#overview">OVERVIEW</a></li>
+              <li class="menu__item"><a class="menu__link" href="#overview--phone">OVERVIEW</a></li>
               <li class="menu__item"><a class="menu__link" href="#showreel">SHOWREEL</a></li>
               <li class="menu__item"><a class="menu__link" href="#features">FEATURES</a></li>
-              <li class="menu__item"><a class="menu__link" href="#service-flow">SERVICE FLOW</a></li>
+              <li class="menu__item"><a class="menu__link" href="#service-flow--phone">SERVICE FLOW</a></li>
               <li class="menu__item"><a class="menu__link" href="#usecases">USECASES</a></li>
               <li class="menu__link--decoration"></li>
             </ul>
           </div>
         </div>
-      </div>
     </div>
   </header>
 
@@ -89,7 +88,7 @@
   </section>
 
   <section>
-    <div class="overview__layout">
+    <div class="overview__layout overview__layout--web">
       <div class="overview__container">
         <div class="overview-photo--1"></div>
         <div class="overview__box" id="overview">
@@ -105,8 +104,24 @@
             <div class="position__pattern2"></div>
         </div>
       </div>
-    
       <div class="overview-photo--2"></div>
+    </div>
+
+    <div class="overview__layout--phone">
+      <div class="overview-photo--1"></div>
+      <div class="overview-photo--2"></div>
+      <div class="overview__box" id="overview--phone">
+        <h2 class="english overview__title">OVERVIEW</h2>
+            <div class="overview__sub-title">REUNIONとは</div>
+            <div class="decoration-line__box">
+              <span class="decoration-line overview__decoration-line"></span>
+            </div>
+            <p class="overview__description">同窓生とコミュニケーションを楽しんだり、同窓会の
+              出欠管理・告知ができるクローズドSNSです同窓生と
+              コミュニケーションを楽しんだり、同窓会の出欠管
+              理・告知ができるクローズドSNSです</p>
+      </div>
+      <img class="position__pattern4" src="assets/pattert4--phone.svg" alt="pattert4--phone">
     </div>
   </section>
 
@@ -169,7 +184,7 @@
           </div>
         </div>
         <div>
-          <div class="features__description__container--tablet">
+          <div class="features__description__container--tablet border-top--none">
             <div class="english features__description-number">03</div>
             <h3 class="features__description-title">決め事は全て投票制</h3>
             <p class="features__description">企画を進めていく時には、グループのメンバーで投票していきます。幹事は投票の多いものに決定するだけです</p>
@@ -319,7 +334,7 @@
 <div class="service-flow--both--tablet">
   <!-- 幹事 -->
   <section class="service-flow--coordinator__box--tablet">
-    <div class="service-flow--participant__subject__container">
+    <div class="service-flow--participant__subject__container" id="service-flow--phone">
       <div class="service-flow--coordinator__subject service-flow--coordinator__subject__tab--1">幹事</div>
       <div class="service-flow--coordinator__subject service-flow--coordinator__subject--light-color service-flow--coordinator__subject__tab--2">参加者</div>
     </div>
@@ -340,20 +355,20 @@
               <div class="english service-flow--coordinator__number--tablet">03</div>
             </div>
           </div>
-          <div class="service-flow--coordinator__description__container">
-            <div class="service-flow--coordinator__description__box">
-              <div class="service-flow--coordinator__description__contents--tablet service-flow--coordinator__description__contents--show">
-                <h3 class="service-flow--coordinator__description__title">いつものSNSから簡単にグループへ招待</h3>
-                <p class="service-flow--coordinator__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
-              </div>
-              <div class="service-flow--coordinator__description__contents--tablet">
-                <h3 class="service-flow--coordinator__description__title">イベント情報を登録したら自動で企画開始</h3>
-                <p class="service-flow--coordinator__description">イベントの開催頻度を設定することで、開催時期が近くなると通知が来て、App側から企画を促します。</p>
-              </div>
-              <div class="service-flow--coordinator__description__contents--tablet">
-                <h3 class="service-flow--coordinator__description__title">参加者からの投票をみてイベント概要を決定</h3>
-                <p class="service-flow--coordinator__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
-              </div>
+        </div>
+        <div class="service-flow--coordinator__description__container">
+          <div class="service-flow--coordinator__description__box">
+            <div class="service-flow--coordinator__description__contents--tablet service-flow--coordinator__description__contents--show">
+              <h3 class="service-flow--coordinator__description__title">いつものSNSから簡単にグループへ招待</h3>
+              <p class="service-flow--coordinator__description">アプリをダウンロードし、会員登録。ログイン状態で招待URLを押すとそのままグループに参加できます。</p>
+            </div>
+            <div class="service-flow--coordinator__description__contents--tablet">
+              <h3 class="service-flow--coordinator__description__title">イベント情報を登録したら自動で企画開始</h3>
+              <p class="service-flow--coordinator__description">イベントの開催頻度を設定することで、開催時期が近くなると通知が来て、App側から企画を促します。</p>
+            </div>
+            <div class="service-flow--coordinator__description__contents--tablet">
+              <h3 class="service-flow--coordinator__description__title">参加者からの投票をみてイベント概要を決定</h3>
+              <p class="service-flow--coordinator__description">イベントに関する情報はApp内に集約されているので、開催日時・参加者・会場の情報へもすぐにアクセスすることが可能です。</p>
             </div>
           </div>
         </div>
@@ -372,7 +387,7 @@
 
   <!-- 参加者 -->
   <section class="service-flow--participant__box--tablet">
-    <div class="service-flow--participant__subject__container">
+    <div class="service-flow--participant__subject__container" id="service-flow--phone">
       <div class="service-flow--coordinator__subject service-flow--coordinator__subject__tab--1">幹事</div>
       <div class="service-flow--coordinator__subject service-flow--coordinator__subject--light-color service-flow--coordinator__subject__tab--2">参加者</div>
     </div>
@@ -393,20 +408,20 @@
               <div class="english service-flow--participant__number--tablet">03</div>
             </div>
           </div>
-          <div class="service-flow--coordinator__description__container">
-            <div class="service-flow--coordinator__description__box">
-              <div class="service-flow--participant__description__contents--tablet service-flow--coordinator__description__contents--show">
-                <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
-                <p class="service-flow--coordinator__description">幹事はグループを作成したら、SNSなどでURLを共有するだけでグループに招待できます。</p>
-              </div>
-              <div class="service-flow--participant__description__contents--tablet">
-                <h3 class="service-flow--coordinator__description__title">イベントの企画が動き出したらみんなで投票</h3>
-                <p class="service-flow--coordinator__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
-              </div>
-              <div class="service-flow--participant__description__contents--tablet">
-                <h3 class="service-flow--coordinator__description__title">イベントの情報はAppで管理、いつでも確認</h3>
-                <p class="service-flow--coordinator__description">グループメンバーによる投票結果から、幹事は最終決定をするだけでイベントを動かすことができます。店舗への電話予約だけが幹事のお仕事です。</p>
-              </div>
+        </div>
+        <div class="service-flow--coordinator__description__container">
+          <div class="service-flow--coordinator__description__box">
+            <div class="service-flow--participant__description__contents--tablet service-flow--coordinator__description__contents--show">
+              <h3 class="service-flow--coordinator__description__title">SNSに送られてきたURLから簡単にグループ参加</h3>
+              <p class="service-flow--coordinator__description">幹事はグループを作成したら、SNSなどでURLを共有するだけでグループに招待できます。</p>
+            </div>
+            <div class="service-flow--participant__description__contents--tablet">
+              <h3 class="service-flow--coordinator__description__title">イベントの企画が動き出したらみんなで投票</h3>
+              <p class="service-flow--coordinator__description">幹事がイベントを動かすとグループに所属しているメンバーは、開催日・場所などをそれぞれ投票します。メンバーの投票でイベントの概要を決めていくことができます。</p>
+            </div>
+            <div class="service-flow--participant__description__contents--tablet">
+              <h3 class="service-flow--coordinator__description__title">イベントの情報はAppで管理、いつでも確認</h3>
+              <p class="service-flow--coordinator__description">グループメンバーによる投票結果から、幹事は最終決定をするだけでイベントを動かすことができます。店舗への電話予約だけが幹事のお仕事です。</p>
             </div>
           </div>
         </div>
@@ -430,7 +445,7 @@
       <p class="usecases__description">同窓生とコミュニケーションを楽しんだり、同窓会の出欠管理・告知ができるクローズドSNSです同窓生とコミュニケーションを楽しんだり、同窓会の出欠管理・告知ができるクローズドSNSです</p>
     </div>
     <div class="usecases__layout--right">
-      <div>
+      <div class="usecases__layout__detail--phone">
         <div class="usecases__bg-img usecases__bg-img--1">
           <div class="usecases__bg-img__word">同窓会</div>
         </div>
@@ -464,6 +479,5 @@
       </div>
     </div>
   </footer>
-</div>
 </body>
 </html>
