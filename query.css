@@ -97,7 +97,7 @@
   .batsu::after {
     content: "";
     display: block;
-    width: 100%; /*バツ線の長さ*/
+    width: 70%; /*バツ線の長さ*/
     height: 3px; /*バツ線の太さ*/
     background: #000;
     transform: rotate(45deg);
@@ -111,7 +111,7 @@
     transform: rotate(-45deg);
     transform-origin: 100% 50%;
     left: auto;
-    right: 14%;
+    right: 37%;
   }
 
   .logo__container {
@@ -190,7 +190,7 @@
   }
 
   .features__layout--left {
-    width: 50%;
+    width: 100%;
     margin-bottom: 110px;
   }
 
@@ -348,7 +348,7 @@
 
   .service-flow--coordinator__number__container {
     position: absolute;
-    top: 55%;
+    top: 35%;
     left: 10%;
     height: 50%;
     width: 37vw;
@@ -458,7 +458,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* typography */
   h1 {
     font-size: 40px;
