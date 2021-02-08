@@ -56,6 +56,7 @@ h3 {
 /* EFFECT */
 .underline {
   position: relative;
+  cursor: pointer;
 }
 
 .underline:after {
