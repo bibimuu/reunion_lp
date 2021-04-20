@@ -7,6 +7,11 @@
 /* #e0e0e0 グレイ明るい */
 /* #ffffff ホワイト */
 
+@font-face {
+  font-family: "MyFont";
+  src: url(./assets/fonts/DrukWide-Heavy-Reduced.woff.ttf);
+}
+
 /* ALL */
 * {
   padding: 0;
@@ -33,7 +38,7 @@ li {
 /* USED REGULARLY */
 
 .english {
-  font-family: Druk Wide Web;
+  font-family: Druk Wide Web, "MyFont", sans-serif;
   font-weight: 700;
 }
 
@@ -169,7 +174,7 @@ h3 {
 }
 
 .nav__link {
-  font-size: 14px;
+  font-size: 13px;
   color: #000000;
 }
 
@@ -218,27 +223,35 @@ h3 {
 
 .download-icon__box {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .apple-img {
   width: 180px;
   height: 60px;
-  background-image: url("assets/Download_on_the_App_Store_Badge_US.svg");
-  background-size: cover;
+  z-index: 5;
+  /* background-image: url("assets/Download_on_the_App_Store_Badge_US.svg");
+  background-size: cover;*/
   margin-right: 10px;
 }
 
 .google-img {
-  width: 231px;
+  width: 220px;
   height: 90px;
-  background-image: url("assets/google-play-badge.png");
-  background-size: cover;
+  z-index: 5;
+  /* background-image: url("assets/google-play-badge.png");
+  background-size: cover;*/
+}
+
+.google-img img,
+.apple-img img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .top__app__container__position {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   top: 75.5%;
   left: 40%;
 }
@@ -275,6 +288,7 @@ h3 {
 .overview__layout {
   display: flex;
   position: relative;
+  z-index: 4;
 }
 
 .overview__container {
@@ -319,11 +333,11 @@ h3 {
 }
 
 .overview__description {
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 30px;
   overflow-wrap: normal;
   width: 314px;
-  line-height: 180%;
+  line-height: 200%;
 }
 
 /* SHOWREEL */
@@ -451,6 +465,7 @@ h3 {
   overflow-wrap: normal;
   letter-spacing: 0.08em;
   line-height: 180%;
+  font-size: 14px;
 }
 
 /* SERVICE-FLOW BOTH */
@@ -460,6 +475,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  z-index: 5;
 }
 
 .service-flow__top--tablet {
@@ -515,7 +531,7 @@ h3 {
 }
 
 .service-flow--coordinator__subject {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   height: 10vw;
   width: 10vw;
@@ -713,7 +729,7 @@ h3 {
 }
 
 .service-flow--participant__subject {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   height: 10vw;
   width: 10vw;
@@ -853,6 +869,7 @@ h3 {
 
 .service-flow--participant__description {
   font-size: 14px;
+  line-height: 200%;
 }
 
 .service-flow--participant__btn-container {
@@ -903,12 +920,12 @@ h3 {
 }
 
 .usecases__description {
-  font-size: 12px;
+  font-size: 13px;
   padding-top: 30px;
   overflow-wrap: normal;
   width: 209px;
   letter-spacing: 0.08em;
-  line-height: 180%;
+  line-height: 200%;
 }
 
 .usecases__layout__detail {
